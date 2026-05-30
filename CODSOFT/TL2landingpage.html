@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smooth Fizz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+     * { 
+        margin: 0;
+        padding: 0; 
+        box-sizing: border-box;
+     }
+        
+     body { 
+        font-family: 'Poppins', sans-serif;
+        text-align: center; 
+        background: linear-gradient(135deg, #01152f, #031943);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        }
+
+     .header {
+         background: #ce9df1; 
+         color:white; 
+         padding: 20px; }
+        
+     .tagline { 
+         padding: 15px; 
+         font-style: italic; 
+         color: #d3a4f5; 
+         font-size: 1.2rem; }
+
+        .slider-section { 
+            display: flex; 
+            justify-content: center; 
+            gap: 15px; 
+            padding: 40px 10px;
+             flex-wrap: wrap; }
+        
+        .slider-box { 
+            width: 300px; 
+            height: 250px; 
+            overflow: hidden;
+             border: 5px solid rgb(162, 178, 246);
+              border-radius: 15px; 
+            }
+
+        .slider-track { 
+            display: flex; 
+            animation: slide 6s linear infinite; 
+        }
+        
+        .slider-item { 
+            display: flex; 
+            min-width: 300px;
+             justify-content: center; 
+             align-items: center; 
+            }
+        .slider-item img { 
+            width: 350px; 
+            height: 250px; 
+            object-fit: cover;
+            margin: 0px; 
+            }
+        
+    .slider-track {
+            animation-play-state: paused;
+               }
+
+
+     @keyframes slide {
+    0% { transform: translateX(0); 
+       }
+    100% { transform: translateX(-350px); 
+         } 
+        }
+
+  .slider-track { 
+       display: flex; 
+       animation: slide 5s linear infinite; 
+       width: 700px; 
+       }
+
+        .info-container { 
+            display: flex;
+             justify-content: center;
+              gap: 20px; padding: 40px;
+              flex-wrap: wrap; 
+            }
+        .card { 
+            background: rgb(243, 244, 245);
+            padding: 20px; 
+            width: 280px;
+            border-radius: 15px;
+            border-top: 5px solid #c197f4;
+            box-shadow: 0 10px 20px rgba(0,0,0,0,3);
+             }
+        .card h3 {
+             color: #d63031;
+             margin-bottom: 10px;
+             }
+
+        .card p {
+                color: #0b011d;
+             }
+
+        .footer { 
+            background: #2f3542; 
+            color: #ced6e0; 
+            padding: 20px; 
+          }
+    </style>
+</head>
+<body>
+    <header class="header"><h1>SMOOTH FIZZ</h1></header>
+    <p class="tagline">"Sip The Magic, Feel The Spark In Every Drop Pure Magic."</p>
+    <section class="slider-section">
+        <div class="slider-box">
+            <div class="slider-track">
+                <div class="slider-item">
+                    <img src="https://media.istockphoto.com/id/2162110995/photo/soft-drinks.jpg?s=612x612&w=0&k=20&c=fLs6RYC7NPY3oP0r-F2QgiQKeiXC5vtDEpdAJS590-o=" alt="Drink">
+                    <img src="https://media.istockphoto.com/id/2162110995/photo/soft-drinks.jpg?s=612x612&w=0&k=20&c=fLs6RYC7NPY3oP0r-F2QgiQKeiXC5vtDEpdAJS590-o=" alt="Drink">
+                    <img src="https://media.istockphoto.com/id/2162110995/photo/soft-drinks.jpg?s=612x612&w=0&k=20&c=fLs6RYC7NPY3oP0r-F2QgiQKeiXC5vtDEpdAJS590-o=" alt="Drink">
+                    <img src="https://media.istockphoto.com/id/2162110995/photo/soft-drinks.jpg?s=612x612&w=0&k=20&c=fLs6RYC7NPY3oP0r-F2QgiQKeiXC5vtDEpdAJS590-o=" alt="Drink"> 
+                </div>
+            </div>
+        </div>
+        <div class="slider-box">
+            <div class="slider-track">
+                <div class="slider-item">
+                    <img src="https://img.freepik.com/premium-photo/soft-drinks-water-splashes-color-natural-black-background_1091270-9217.jpg" alt="Drink">
+                    <img src="https://img.freepik.com/premium-photo/soft-drinks-water-splashes-color-natural-black-background_1091270-9217.jpg" alt="Drink">
+                     </div>
+            </div>
+        </div>
+        <div class="slider-box">
+            <div class="slider-track">
+                <div class="slider-item">
+                    <img src="https://images.newscientist.com/wp-content/uploads/2022/10/19100521/SEI_121043303.jpg" alt="Drink">
+                   <img src="https://images.newscientist.com/wp-content/uploads/2022/10/19100521/SEI_121043303.jpg" alt="Drink">   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="info-container">
+        <div class="card"><h3>Natural Taste</h3><p>Real fruit ingredients.</p></div>
+        <div class="card"><h3>Zero Sugar</h3><p>Healthier choice for all.</p></div>
+        <div class="card"><h3>Instant Energy</h3><p>Fuel your active day.</p></div>
+        <div class="card"><h3>Premium Fizz</h3><p>Strong, long-lasting bubbles.</p></div>
+        <div class="card"><h3>Cool Refresh</h3><p>Perfect for summer.</p></div>
+        <div class="card"><h3>Pure Quality</h3><p>No artificial preservatives.</p></div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Smooth Fizz Inc. | Refresh Your Mind</p>
+    </footer>
+
+</body>
+</html>
